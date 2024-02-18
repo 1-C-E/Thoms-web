@@ -1,7 +1,7 @@
 <template>
   <PageLayout>
     <div class="flex justify-center mt-[7rem]">
-      <i_love_russia/>
+      главная
     </div>
   </PageLayout>
 </template>
