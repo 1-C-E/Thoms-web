@@ -1,8 +1,9 @@
 <template>
   <PageLayout>
-    <div class="flex justify-center mt-[7rem]">
+    <div class="flex justify-center mt-[20rem] text-[50px]">
       главная
     </div>
+<!--    <NuxtImg src="/article_1.png"/>-->
   </PageLayout>
 </template>
 

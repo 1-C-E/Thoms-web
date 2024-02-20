@@ -4,6 +4,6 @@
 
 @layer components {
     .nav-component {
-        @apply text-[10px] mr-[20px];
+        @apply text-[11px];
     }
 }

@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <div class="flex justify-center mt-[7rem]">
+    <div class="flex justify-center mt-[20rem] text-[50px]">
       Сообщеня
     </div>
   </PageLayout>
