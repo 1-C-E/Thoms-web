@@ -13,11 +13,13 @@ const choice = [
 ]
 
 const selected = ref([])
+
+const isOpen = ref(false)
 </script>
 
 
 <template>
-  <div class="mt-[30px] ml-[100px] mr-[30px]">
+  <div class="mt-[30px] mr-[30px]">
     <section class="flex">
       <nuxt-link to="/" class="text-[32px] font-[500]"> thoms</nuxt-link>
 
@@ -78,6 +80,11 @@ const selected = ref([])
         />
       </UModal>
     </section>
+    <USlideover v-model="isOpen">
+      <div class="p-4 flex-1">
+        <Placeholder class="h-full" />
+      </div>
+    </USlideover>
   </div>
 </template>
 
