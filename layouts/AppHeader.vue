@@ -13,20 +13,14 @@ const choice = [
 ]
 
 const selected = ref([])
-
-const isOpen = ref(false)
 </script>
 
 
 <template>
-  <div class="mt-[30px] mr-[30px]">
+  <div class="mb-[70px]">
     <section class="flex">
-      <nuxt-link to="/" class="text-[32px] font-[500]"> thoms</nuxt-link>
+      <nav class="flex justify-end space-x-[30px]">
 
-      <UInput placeholder="Поиск по сайту"
-              class="flex mt-[4px] ml-[50px] pl-[10px] py-[6px] h-[50px] w-[24rem] text-[#B6B6B6] text-[16px]"/>
-
-      <nav class="flex ml-auto space-x-[30px]">
         <nuxt-link to="/messages" class="nav-component">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor"
@@ -66,6 +60,7 @@ const isOpen = ref(false)
           </svg>
           <div> подбор</div>
         </nuxt-link>
+
       </nav>
     </section>
 
@@ -74,24 +69,11 @@ const isOpen = ref(false)
       <UModal v-model="city">
         <UCommandPalette
             v-model="selected"
-            multiple
             nullable
             :groups="[{ key:'choice',commands: choice}]"
         />
       </UModal>
     </section>
-    <USlideover v-model="isOpen">
-      <div class="p-4 flex-1">
-        <Placeholder class="h-full" />
-      </div>
-    </USlideover>
+
   </div>
 </template>
-
-<style scoped>
-
-.navbar {
-  display: flex;
-}
-
-</style>
