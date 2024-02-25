@@ -1,7 +1,7 @@
 <template>
   <PageLayout>
     <div class="flex justify-center mt-[7rem] text-[50px]">
-      Подбор
+      Страница товара
     </div>
   </PageLayout>
 </template>

@@ -11,7 +11,6 @@ const items = [
 
 <template>
   <div>
-
     <p class="mt-[30px] text-[32px] font-[500]">
       Рекомендации
     </p>

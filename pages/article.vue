@@ -7,5 +7,5 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from "~/layouts/PageLayout.vue";
+import PageLayout from "~/layouts/AppHeader.vue";
 </script>

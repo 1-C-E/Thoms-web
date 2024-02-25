@@ -1,20 +1,16 @@
 <script setup lang="ts">
-import PageLayout from "~/layouts/PageLayout.vue";
-import Banner from "~/layouts/Banner.vue";
-import Articles from "~/layouts/Articles.vue";
+import PageLayout from "~/layouts/AppHeader.vue";
+import AppBanner from "~/layouts/AppBanner.vue";
+import AppArticles from "~/layouts/AppArticles.vue";
+import AppProduct from "~/layouts/AppProduct.vue";
 </script>
 
 <template>
   <PageLayout>
 
-    <Banner/>
-    <Articles/>
-
-    <section>
-      <nuxt-link to="/article">
-        <div></div>
-      </nuxt-link>
-    </section>
+    <AppBanner/>
+    <AppArticles/>
+    <AppProduct/>
 
   </PageLayout>
 </template>

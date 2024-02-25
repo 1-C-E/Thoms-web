@@ -5,12 +5,13 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxt/ui', '@nuxt/image'],
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css',  '~/assets/globals.scss'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
 
 })
