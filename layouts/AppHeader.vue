@@ -12,17 +12,13 @@ const isOpen = ref(false)
         <section class="flex">
           <nuxt-link to="/" class="text-[32px] font-[500]"> thoms</nuxt-link>
 
-          <UButton @click="isOpen = true" color="white" class="mt-[10px] ml-[40px] h-[38px] w-[38px]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor"
-                 class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
+          <UButton @click="isOpen = true" class="mt-[10px] ml-[40px] h-[38px] w-[90px] rounded-[14px] bg-gradient-to-r from-[#7875FF] to-[#00A3FF] hover:bg-white">
+            <div class="ml-auto mr-auto text-[16px] text-white"> каталог</div>
           </UButton>
 
           <UInput placeholder="Поиск по сайту"
                   color="#7875FF"
-                  class="flex mt-[4px] ml-[50px] pl-[10px] py-[6px] h-[50px] w-[24rem] text-[#B6B6B6] text-[16px]"/>
+                  class="flex mt-[4px] ml-[50px] pl-[10px] py-[6px] h-[50px] w-[24rem] rounded-[50px] text-[#B6B6B6] text-[16px]"/>
 
           <div class="ml-auto">
             <AppNavigation/>
