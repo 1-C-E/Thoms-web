@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const email = ref('')
 const password = ref('')
-const isSignUp = ref(false);
+const isSignUp = ref(false)
 const client = useSupabaseClient()
 
 const signUp = async () => {
@@ -29,7 +29,7 @@ const login = async () => {
       <input
           type="email"
           placeholder="Email"
-          v-model="email"
+          v-mode2="email"
           class="p-2 bg-gray-600 rounded"
 
       />
