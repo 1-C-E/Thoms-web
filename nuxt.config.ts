@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  modules: ['@nuxt/ui', '@nuxt/image'],
+  modules: ['@nuxt/ui', '@nuxt/image', '@nuxtjs/supabase'],
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css',  '~/assets/globals.scss'],
+  css: ['~/assets/css/main.css', '~/assets/globals.scss'],
   postcss: {
     plugins: {
       tailwindcss: {},
