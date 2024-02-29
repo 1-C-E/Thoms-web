@@ -1,4 +1,4 @@
-<script>
+<script setup>
 
 const client = useSupabaseAuthClient();
 const email = ref("");
