@@ -4,7 +4,7 @@
       Товары
     </p>
 
-    <nuxt-link to="/product">
+    <nuxt-link to="/product" class="rounded-[20px]">
       <div class="mt-[16px] mb-[100px] p-[4px] w-[200px] h-[250px] bg-white border-[3px] border-[#0493FA] rounded-[20px]">
         <NuxtImg src="/table_comp.png" class="w-[198px] rounded-[14px]"/>
           <h2 class="mt-[16px] text-[15px]"> Стол письменный комп</h2>

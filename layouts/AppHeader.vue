@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AppNavigation from "~/layouts/AppNavigation.vue";
+import AppNavigation from "~/components/AppNavigation.vue";
 
 const isOpen = ref(false)
 </script>
