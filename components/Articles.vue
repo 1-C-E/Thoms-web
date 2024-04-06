@@ -23,9 +23,11 @@ const items = [
         </nuxt-link>
       </UCarousel>
 
-      <nuxt-link to="/banner_2" class="ml-[30px] rounded-[20px]">
-        <NuxtImg src="/banner_2.svg" class="w-[900px] h-[200px] rounded-[20px]"/>
-      </nuxt-link>
+      <div>
+        <nuxt-link to="/banner_2" class="ml-[30px] rounded-[20px]">
+          <NuxtImg src="/banner_2.svg" class="rounded-[20px] h-full"/>
+        </nuxt-link>
+      </div>
     </section>
 
   </div>
