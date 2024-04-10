@@ -16,7 +16,7 @@ const items = [
     </p>
 
     <section class="flex mt-[16px]">
-      <UCarousel v-slot="{ item }" :items="items">
+      <UCarousel v-slot="{ item }" :items="items" class="w-[600px]">
         <nuxt-link to="/article" class=" mr-[30px] p-[3px] border-[3px] border-[#0493FA] rounded-[20px]">
           <img :src="item" width="150" height="168" draggable="false"
                class="rounded-[16px]">

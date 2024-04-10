@@ -6,6 +6,7 @@ const isOpen = ref(false)
 
 <template>
   <div>
+
     <div class="bg-white rounded-b-[40px]">
       <div class="pt-[30px] ml-[100px] mr-[100px]">
 
