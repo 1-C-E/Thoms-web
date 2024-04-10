@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import PageLayout from "~/layouts/AppHeader.vue";
-import AppBanner from "~/layouts/AppBanner.vue";
-import AppArticles from "~/layouts/AppArticles.vue";
-import AppProduct from "~/layouts/AppProduct.vue";
+import AppHeader from "~/layouts/AppHeader.vue";
+import AppBanner from "~/components/Banner.vue";
+import AppArticles from "~/components/Articles.vue";
+import AppProduct from "~/components/CardList.vue";
 </script>
 
 <template>
-  <PageLayout>
+  <AppHeader>
 
     <AppBanner/>
     <AppArticles/>
     <AppProduct/>
 
-  </PageLayout>
+  </AppHeader>
 </template>

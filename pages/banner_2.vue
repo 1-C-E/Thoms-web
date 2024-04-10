@@ -1,11 +1,10 @@
 <template>
-  <AppHeader>
+  <PageLayout>
     <div class="flex justify-center mt-[7rem] text-[50px]">
-      статья
+      реклама 2
     </div>
-  </AppHeader>
+  </PageLayout>
 </template>
-
 <script setup lang="ts">
-import AppHeader from "~/layouts/AppHeader.vue";
+import PageLayout from "~/layouts/AppHeader.vue";
 </script>

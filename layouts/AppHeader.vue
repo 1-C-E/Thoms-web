@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import AppNavigation from "~/layouts/AppNavigation.vue";
+import AppNavigation from "~/components/Navigation.vue";
 
 const isOpen = ref(false)
 </script>
 
 <template>
   <div>
+
     <div class="bg-white rounded-b-[40px]">
       <div class="pt-[30px] ml-[100px] mr-[100px]">
 
