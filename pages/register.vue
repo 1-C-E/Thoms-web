@@ -1,32 +1,41 @@
 <script setup lang="ts">
-import {createUserWithEmailAndPassword} from "firebase/auth";
+import { z } from 'zod'
+import type { FormSubmitEvent } from '#ui/types'
 
-const {$auth} = useNuxtApp()
-const email = ref('');
-const password = ref('');
+const {register} = useFirebaseAuth()
+const schema = z.object({
+  email: z.string().email('Invalid email'),
+  password: z.string().min(6, 'Must be at least 6 characters')
+})
 
-const handeSubmit = async () => {
+type Schema = z.output<typeof schema>
+
+const state = reactive({
+  email: undefined,
+  password: undefined
+})
+
+async function onSubmit (event: FormSubmitEvent<Schema>) {
   try {
-    const res = await createUserWithEmailAndPassword($auth, email.value, password.value)
-    console.log(res)
+    await register(event.data.email, event.data.password)
   } catch (error) {
-    console.log(error)
+
   }
 }
 </script>
 
 <template>
-  <div>
-    <h1>Create an Account</h1>
-    <form @submit.prevent="handeSubmit">
-      <p><input type="email" placeholder="Email" v-model="email"/></p>
-      <p><input type="password" placeholder="Password" v-model="password"/></p>
-      <p>
-        <button type="submit">Submit</button>
-      </p>
-      <p>
-        <button>Sign In With Google</button>
-      </p>
-    </form>
-  </div>
+  <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
+    <UFormGroup label="Email" name="email">
+      <UInput v-model.trim="state.email" />
+    </UFormGroup>
+
+    <UFormGroup label="Password" name="password">
+      <UInput v-model.trim="state.password" type="password" />
+    </UFormGroup>
+
+    <UButton type="submit">
+      Submit
+    </UButton>
+  </UForm>
 </template>
