@@ -4,7 +4,7 @@
 
 @layer components {
     .nav-component {
-        @apply text-[11px];
+        @apply text-[11px] text-[#000000];
     }
 
     .header {

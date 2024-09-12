@@ -65,7 +65,7 @@ const selected = ref([])
     </section>
 
     <section>
-      <UButton label="Укажите ваше местоположение" @click="city = true" color="white" class="float-right mt-[20px] mb-[20px] px-[15px] py-[8px] rounded-[20px] border-[3px] border-[#3AABE1]" />
+      <UButton label="Укажите ваше местоположение" @click="city = true" color="white" class="float-right mt-[20px] mb-[20px] px-[15px] py-[8px] rounded-[15px] bg-gradient-to-r from-[#7875FF] to-[#00A3FF]" />
       <UModal v-model="city">
         <UCommandPalette
             v-model="selected"

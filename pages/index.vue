@@ -8,11 +8,12 @@ import SignUp from "~/components/SignUp.vue";
 
 <template>
   <AppHeader>
-    <SignUp/>
-
+  
     <AppBanner/>
     <AppArticles/>
     <AppProduct/>
+    
+    <SignUp/>
 
   </AppHeader>
 </template>
