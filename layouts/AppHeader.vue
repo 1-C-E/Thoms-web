@@ -11,7 +11,7 @@ const isOpen = ref(false)
       <div class="pt-[30px] ml-[100px] mr-[100px]">
 
         <section class="flex">
-          <nuxt-link to="/" class="text-[32px] font-[500]"> thoms</nuxt-link>
+          <nuxt-link to="/" class="text-[32px] font-[500] text-[#000000] h-[40px]"> thoms</nuxt-link>
 
           <UButton @click="isOpen = true" class="mt-[10px] ml-[40px] h-[38px] w-[90px] rounded-[14px] bg-gradient-to-r from-[#7875FF] to-[#00A3FF] hover:bg-white">
             <div class="ml-auto mr-auto text-[16px] text-white"> каталог</div>

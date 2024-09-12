@@ -17,9 +17,9 @@ defineProps({
       <NuxtImg src="/table_comp.png" class="w-[198px] rounded-[14px]"/>
       <h2 class="mt-[16px] text-[15px]">{{title}}</h2>
 
-      <div class="flex justify-between mt-[20px]">
-        <h2 class="text-[15px]"> {{price}} руб.</h2>
-        <NuxtImg @click="onClickAdd" :src="!isAdded ? '/plus.svg' : 'check.svg'"/>
+      <div class="flex justify-between mt-[20px] my-end">
+        <h2 class="text-[15px] text-[#000000] my-auto"> {{price}} руб.</h2>
+        <NuxtImg @click="onClickAdd" :src="!isAdded ? '/plus.svg' : 'check.svg'" class="h-[30px] my-auto"/>
       </div>
 
     </div>

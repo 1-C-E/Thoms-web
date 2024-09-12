@@ -7,7 +7,7 @@ const onClickAdd = () => {
 
 <template>
   <div>
-    <p class="mt-[30px] text-[32px] font-[500]">
+    <p class="mt-[100px] text-[32px] font-[500] text-[#000000]">
       Товары
     </p>
 
